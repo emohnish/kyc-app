@@ -15,7 +15,7 @@ export const SidebarData = [
   },
   {
     title: 'Account Onboarding',
-    path: '/reports',
+    path: '/accountOnboarding',
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 

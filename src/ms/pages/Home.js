@@ -1,9 +1,9 @@
 import React from "react";
 import { Tabs, Tab, AppBar, Divider, Paper } from "@material-ui/core";
-import MyTasks from "../components/MyTasks";
-import MyTeamTasks from "../components/MyTeamTasks";
+import MyTasks from "../../ms/components/MyTasks";
+import MyTeamTasks from "../../ms/components/MyTeamTasks";
 import '../styles/home.css';
-
+import Grid from "@material-ui/core/Grid";
 import {
   Navbar,
   Nav,
@@ -39,23 +39,29 @@ const Home = props => {
 
   return (
 
-    <div className="main">
+    <div>
+      <Grid container spacing={4} border={3}>
+        <Grid item xs={12}>
+          <div>
 
-      <AppBar position="static">
-        <Tabs value={selectedTab} onChange={handleChange}>
+            <AppBar position="static">
+              <Tabs value={selectedTab} onChange={handleChange}>
 
-          <Tab label="My Tasks" />
+                <Tab label="My Tasks" />
 
-          <Tab label="My Team Tasks" />
+                <Tab label="My Team Tasks" />
 
-        </Tabs>
-      </AppBar>
+              </Tabs>
+            </AppBar>
 
-      {selectedTab === 0 && <MyTasks />}
-      {selectedTab === 1 && <MyTeamTasks />}
+            {selectedTab === 0 && <MyTasks />}
+            {selectedTab === 1 && <MyTeamTasks />}
 
 
 
+          </div>
+        </Grid>
+      </Grid>
     </div>
   );
 };

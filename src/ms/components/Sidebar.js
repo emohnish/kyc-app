@@ -3,47 +3,34 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
+import { SidebarData } from '../components/SidebarData';
+import SubMenu from '../components/SubMenu';
 import { IconContext } from 'react-icons/lib';
 
 import Paper from '@material-ui/core/Paper';
+import Popper from '@material-ui/core/Popper';
+import MenuItem from '@material-ui/core/MenuItem';
+import MenuList from '@material-ui/core/MenuList';
+
 
 const Nav = styled.div`
   
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 2rem;
-  font-size: 2rem;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  
 `;
 
 const SidebarNav = styled.nav`
-  background: #8abbc2;
-  width: 250px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 140px;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-  transition: 350ms;
-  z-index: 10;
-  margin-top:-59px;
+  
 `;
 
 const SidebarWrap = styled.div`
   
   background:#CCCCCC;
 `;
+
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(true);
@@ -52,13 +39,20 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* <IconContext.Provider value={{ color: '#fff' }}> */}
-      {/* <Nav>
-          <NavIcon to='#'>
-            <FaIcons.FaBars onClick={showSidebar} />
-          </NavIcon>
-        </Nav> */}
+      {/*
 
+        <div>
+          <Paper>
+            <MenuList>
+              <MenuItem>Profile</MenuItem>
+              <MenuItem>My account</MenuItem>
+              <MenuItem>Logout</MenuItem>
+            </MenuList>
+          </Paper>
+        </div>
+      
+      
+      */}
 
       <SidebarNav sidebar={sidebar}>
         <SidebarWrap>
@@ -69,8 +63,8 @@ const Sidebar = () => {
           })}
         </SidebarWrap>
       </SidebarNav>
-      {/* </IconContext.Provider> */}
     </>
+
   );
 };
 
