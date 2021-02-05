@@ -49,23 +49,13 @@ const AccountOnboarding = (props) => {
   return (
     <div>
       <Grid container spacing={2}>
+        <Grid item xs={12}></Grid>
         <Grid item xs={12}>
-          <AppBar position="static">
-            <Tabs value={selectedTab} onChange={handleChange}>
-              <Tab label="RM Tagging" />
-              <Tab label="KYC Writeup" />
-              <Tab label="Risk Assessment" />
-              <Tab label="Document Upload" />
-              <Tab label="Submit" />
-            </Tabs>
-          </AppBar>
-        </Grid>
-        <Grid item xs={12}>
-          {selectedTab === 0 && <RMTagging />}
-          {selectedTab === 1 && <KYCWriteup />}
-          {selectedTab === 2 && <RiskAssessment />}
-          {selectedTab === 3 && <DocumentUpload />}
-          {selectedTab === 4 && <SubmitAccountOnboarding />}
+          {selectedTab === 1 && <RMTagging />}
+          {selectedTab === 2 && <KYCWriteup />}
+          {selectedTab === 3 && <RiskAssessment />}
+          {selectedTab === 4 && <DocumentUpload />}
+          {selectedTab === 5 && <SubmitAccountOnboarding />}
         </Grid>
 
         <Grid item xs={12}>
