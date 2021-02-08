@@ -1,0 +1,27 @@
+.foot {
+    box-sizing: border-box;
+    width: 99.8%;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+    /* margin-bottom: 2em; */
+    background-color: rgb(97 92 92);
+    color: #fff;
+     min-width: 960px;
+    position: fixed;
+    border: medium none;
+    float: left;
+    margin-top: 162px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .foot h3{
+      padding: 13px;
+      margin-left: -444px;
+      margin: 7px;
+      margin-top: -7px;
+      margin-left: -1200px;
+      font-size: 12px;
+    }
+    

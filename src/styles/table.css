@@ -1,0 +1,38 @@
+table {
+    font-family:  Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 960px;
+    font-size:10px;
+  }
+  
+  table td,
+  table th {
+    border: 1px   #ddd;
+    padding: 4px;
+    font-size:11px ;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table th, tfoot td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #cccccc;
+    color: #666666;
+  }
+  table input{
+      width:80px;
+  }
+  .pagination{
+    padding: 4px;
+    font-size: 11px;
+    background-color: #cccccc;
+  }
+  

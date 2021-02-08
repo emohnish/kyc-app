@@ -7,11 +7,9 @@ import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 
-import Paper from '@material-ui/core/Paper';
-
 const Nav = styled.div`
-  
-  height: 80px;
+  background: #666666;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -27,10 +25,9 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #8abbc2;
-  width: 250px;
-  height: 500px;
-  display: flex;
+  background: #ffffff;
+  width: 160px;
+  display: table;
   justify-content: center;
   position: absolute;
   top: 140px;
@@ -38,12 +35,16 @@ const SidebarNav = styled.nav`
   transition: 350ms;
   z-index: 10;
   margin-top:-59px;
+  margin-left:6px;
 `;
 
-const SidebarWrap = styled.div`
-  
-  background:#CCCCCC;
-`;
+const SidebarWrap = {
+  width: "auto",
+  background:"#ffffff",
+  font:"13px",
+  color:"white",
+};
+
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(true);
@@ -53,22 +54,21 @@ const Sidebar = () => {
   return (
     <>
       {/* <IconContext.Provider value={{ color: '#fff' }}> */}
-      {/* <Nav>
+        {/* <Nav>
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
         </Nav> */}
-
-
-      <SidebarNav sidebar={sidebar}>
-        <SidebarWrap>
-
-          {SidebarData.map((item, index) => {
-
-            return <SubMenu item={item} key={index} />
-          })}
-        </SidebarWrap>
-      </SidebarNav>
+        <SidebarNav sidebar={sidebar}>
+          <div className="SidebarWrap">
+            {/* <NavIcon to='#'>
+              <AiIcons.AiOutlineClose onClick={showSidebar} />
+            </NavIcon> */}
+            {SidebarData.map((item, index) => {
+              return <SubMenu item={item} key={index} />;
+            })}
+          </div>
+        </SidebarNav>
       {/* </IconContext.Provider> */}
     </>
   );

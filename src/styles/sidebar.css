@@ -1,7 +1,14 @@
+
+.nav{
+    width:190px;
+    float:left;
+    padding-bottom: 45px;
+    height: auto;
+}
 .sidemenu{
     background: #8aa9c2;
-width: 150px;
-height: 200px;
+/* width: 250px;
+height: 500px; */
 display: flex;
 justify-content: center;
 position: absolute;
@@ -9,4 +16,25 @@ top: 140px;
 /*left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};*/
 transition: 350ms;
 z-index: 10;
+}
+.menuPad{
+    padding-left: 5px;
+    padding-bottom: 6px;
+}
+.masterMenu{
+    z-index: 250;
+    padding-bottom: 10px;
+    position:relative;
+    width:180px;
+    display:table;
+}
+.sidebarheader{
+    height: 4px;
+}
+.sidebarcontent{
+    background-color: transparent;
+    height:auto;
+    width:176px;
+    vertical-align:top;
+    margin:0 2px;
 }

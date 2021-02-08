@@ -1,21 +1,21 @@
-import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
-import * as RiIcons from 'react-icons/ri';
+import React from "react";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
   {
-    title: 'Home',
-    path: '/home',
-    icon: <AiIcons.AiFillHome />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
+    title: "Home",
+    path: "/home",
+    // icon: <AiIcons.AiFillHome />,
+    // iconClosed: <RiIcons.RiArrowDownSFill />,
+    // iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
-    title: 'Account Onboarding',
-    path: '/reports',
+    title: "Account Onboarding",
+    //path: '/reports',
+    path: "/accountOnboarding",
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
@@ -37,12 +37,12 @@ export const SidebarData = [
     // ]
   },
   {
-    title: 'Rollng Reviews',
-    path: '/products',
+    title: "Rollng Reviews",
+    path: "/products",
   },
   {
-    title: 'Blotter',
-    path: '/team',
+    title: "Blotter",
+    path: "/team",
     // icon: <IoIcons.IoMdPeople />
   },
   // {
@@ -67,7 +67,7 @@ export const SidebarData = [
   //   ]
   // },
   {
-    title: 'Summary',
-    path: '/support',
-  }
+    title: "Summary",
+    path: "/support",
+  },
 ];

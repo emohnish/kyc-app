@@ -1,6 +1,5 @@
-//import './App.css';
+import "./App.css";
 import Sidebar from "./components/Sidebar";
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,20 +8,21 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from "./pages/Reports";
-import Team from "./pages/Team";
+import Onboarding from "./pages/Onboarding";
 import Header from "./components/Header";
+import Footer from "./pages/Footer";
 import MyTasks from "./components/MyTasks";
 import MyTeamTasks from "./components/MyTeamTasks";
+import Menu from "./pages/Menu";
 
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+import AccountOnboarding from "./pages/AccountOnboarding";
 
 function App() {
   return (
+    // <div className="main">
     <Router>
       <Header />
       <Sidebar />
-
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/home" exact component={Home} />
@@ -37,9 +37,13 @@ function App() {
         <Route path="/reports/reports1" exact component={ReportsOne} />
         <Route path="/reports/reports2" exact component={ReportsTwo} />
         <Route path="/reports/reports3" exact component={ReportsThree} />
-        <Route path="/team" exact component={Team} />
+        <Route path="/onboarding" exact component={Onboarding} />
+
+        <Route path="/accountOnboarding" exact component={AccountOnboarding} />
       </Switch>
     </Router>
+    //   <Footer/>
+    //   </div>
   );
 }
 

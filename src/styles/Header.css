@@ -1,11 +1,26 @@
-.Title {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding: 1em;
-    margin-bottom: 2em;
-    background-color: rgb(192, 45, 26);
-    color: #fff;
+.title {
+  box-sizing: border-box;
+  width: 99.8%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0;
+  margin-bottom: 2em;
+  background-color: rgb(192, 45, 26);
+  color: #fff;
+  height: 65px;
+  min-width: 960px;
+  position: inherit;
+  border: medium none;
+  float: left;
+  margin-top:-81px;
+   font-family: Arial, Helvetica, sans-serif;
   }
+  .title h1{
+    padding: 13px;
+     margin: 7px;
+    margin-top: 2px;
+    margin-left: -1200px;
+    font-size: 28px;
+  }
+  

@@ -1,9 +1,9 @@
 import React from "react";
 import { Tabs, Tab, AppBar, Divider, Paper } from "@material-ui/core";
-import MyTasks from "../../ms/components/MyTasks";
-import MyTeamTasks from "../../ms/components/MyTeamTasks";
+import MyTasks from "../components/MyTasks";
+import MyTeamTasks from "../components/MyTeamTasks";
 //import '../styles/home.css';
-import "../../ms/styles/AccountOnboarding.css";
+import "../styles/AccountOnboarding.css";
 import Grid from "@material-ui/core/Grid";
 
 import RMTagging from "./accountOnboarding/RMTagging";
@@ -47,17 +47,8 @@ const AccountOnboarding = (props) => {
   };
 
   return (
-    <div>
+    <div className="main">
       <Grid container spacing={2}>
-        <Grid item xs={12}></Grid>
-        <Grid item xs={12}>
-          {selectedTab === 1 && <RMTagging />}
-          {selectedTab === 2 && <KYCWriteup />}
-          {selectedTab === 3 && <RiskAssessment />}
-          {selectedTab === 4 && <DocumentUpload />}
-          {selectedTab === 5 && <SubmitAccountOnboarding />}
-        </Grid>
-
         <Grid item xs={12}>
           <div className="container">
             <div className="bloc-tabs">
