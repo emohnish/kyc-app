@@ -38,21 +38,21 @@ const useStyles = makeStyles((theme) => ({
 const RMTagging = () => {
   const { register, handleSubmit } = useForm();
 
-  const [relManagerNameVal, setRelManagerNameVal] = React.useState(0);
-  const [entityVal, setEntityVal] = React.useState(0);
-  const [rmSalesCodeVal, setRmSalesCodeVal] = React.useState(0);
-  const [lmNameVal, setLmNameVal] = React.useState(0);
-  const [accountTypeVal, setAccountTypeVal] = React.useState(0);
+  const [relManagerNameVal, setRelManagerNameVal] = useState(0);
+  const [entityVal, setEntityVal] = useState(0);
+  const [rmSalesCodeVal, setRmSalesCodeVal] = useState(0);
+  const [lmNameVal, setLmNameVal] = useState(0);
+  const [accountTypeVal, setAccountTypeVal] = useState(0);
 
   const [
     relManagerNameDrpdwnVals,
     setRelManagerNameDrpdwnVals,
   ] = React.useState([]);
 
-  const [entityDrpdwnVals, setEntityDrpdwnVals] = React.useState([]);
-  const [rmSalesCodeDrpdwnVals, setRmSalesCodeDrpdwnVals] = React.useState([]);
-  const [lmNameDrpdwnVals, setLmNameDrpdwnVals] = React.useState([]);
-  const [accountTypeDrpdwnVals, setAccountTypeDrpdwnVals] = React.useState([]);
+  const [entityDrpdwnVals, setEntityDrpdwnVals] = useState([]);
+  const [rmSalesCodeDrpdwnVals, setRmSalesCodeDrpdwnVals] = useState([]);
+  const [lmNameDrpdwnVals, setLmNameDrpdwnVals] = useState([]);
+  const [accountTypeDrpdwnVals, setAccountTypeDrpdwnVals] = useState([]);
 
   useEffect(() => {
     //console.log(relManagerNameVal);

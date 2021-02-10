@@ -1,5 +1,7 @@
 .main {
-  width: 960px;
+  /*width: 960px;*/
+
+  width: auto;
   background: white;
   color: black;
   margin-top: 81px;
